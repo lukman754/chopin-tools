@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chopin Tools</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .splash-screen {
+            text-align: center;
+        }
+        .splash-screen h1 {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+        .splash-screen p {
+            font-size: 1rem;
+            color: #b3b3b3;
+        }
+        .loading-bar {
+            width: 100%;
+            background-color: #444;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .loading-bar div {
+            height: 10px;
+            width: 0;
+            background-color: #7e00cc;
+            animation: load 1s linear forwards;
+        }
+        @keyframes load {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                window.location.href = "https://chopin-tools.my.id";
+            }, 3000); // Redirect after 3 seconds
+        });
+    </script>
+</head>
+<body>
+    <div class="splash-screen">
+        <img src="assets/images/logo.svg" style="width: 300px;" alt="">
+        <p>Redirecting you to website...</p>
+        <div class="loading-bar">
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

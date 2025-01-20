@@ -1,0 +1,9 @@
+{
+    "name": "chopin/chopin",
+    "description": "unpam pay",
+    "type": "proeject",
+    "license": "MIT",
+    "require": {
+        "smalot/pdfparser": "^2.10"
+    }
+}
